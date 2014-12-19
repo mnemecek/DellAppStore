@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Dell&#8482; App Store Home > Messaging > Chatter</title>
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: styles/mobile.css" />
+<style type="text/css">
+
+/* CSS Document */
+
+/* TABLE OF CONTENTS */
+
+/* 01. UNIVERSAL */
+/* 02. BASIC STRUCTURE, divs */
+/* 03. NAV STYLES, tabs */
+/* 04. BUTTONS WITH ROUNDED CORNERS */
+/* 05. FOOTER */
+
+/* ------------------------------- */
+
+/* 01. UNIVERSAL */
+wrapper { 
+	width: 100%; 
+}
+body {
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+#sign_in {
+	float:right;
+}
+#sign_in img {
+	margin:0;
+	padding:0;
+}
+
+/* CONTAINER FOR EACH APP */
+
+.app_section {
+	height:72px;
+	width:100%;
+	background-color:#ebebeb;
+	border:1px solid #d0d0d0;
+	display:block;
+	text-decoration:none;
+}
+.app_section a{
+	text-decoration:none;
+	color:#000;
+}
+.app_section a:visited{
+	text-decoration:none;
+	color:#000;
+}
+.app_section img {
+	float:left;
+}
+.icon{
+	margin:7px 10px 0 20px;
+}
+.right_arrow {
+	float:right;
+	width:42px;
+	height:72px;
+	text-align:center;
+	background-color:#dfdfdf;
+	color:#000;
+}
+#categories {
+	padding-top:20px;
+	font-weight:100;
+	line-height:30px;
+}
+/* SPAN CLASSES */
+.app_name {
+	font-size:20px;
+	padding-top:20px;
+}
+.app_developer {
+	font-size:7.5px;
+	line-height:18px;
+	}
+.app_section h8 {
+	margin-left:20px;
+}
+/* ------------------------------- */
+
+
+
+
+/* 02. BASIC STRUCTURE, divs */
+#top_bar {
+	font-size:11px;
+	background-color:#ebebeb;
+	height:18px;
+	width:100%;
+	text-align:left;
+	padding:5px 0px 2px 4px; 
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.profile {
+	background-color:#cce5f5;
+	height:20px;
+	width:25%;
+	margin-top:-3px;
+	float:right;
+	padding-top:3px;
+    white-space: nowrap;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+a.profile {
+	width:25%;
+	font-size:11px;
+	background-color:#cce5f5;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#header {
+	width:100%;
+	height:45px;
+	color:#aaa;
+	text-align:center;
+	font-size:21px;
+	font-weight:bold;
+	font-family:Arial;
+	background-color:#fff;
+}
+#header img {
+	vertical-align:central;
+	margin:auto;
+}
+/* CAROUSEL WITH LARGE IMAGE */
+#carousel {
+	width:100%;
+	height:142px;
+}
+#carousel img{
+	width:100%;
+}
+#carousel_overlay {
+	opacity:0.7;
+	height:65px;
+	background-color:#000;
+	color:#fff;
+	padding:6px 6px 0px 9px;
+}
+#carousel_overlay p {
+	width:50%;
+	font-size:9px;
+	float:left;
+}
+
+/* 03. NAV STYLES */
+/* mainnav = home, solutions, etc. tabs */
+a.main_nav {
+	width: 20%;
+	height:22px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	background: #02629e; /* for non-css3 browsers */
+	float:left;
+}
+a.main_nav:visited {
+	width: 20%;
+	height:22px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	background: #02629e; /* for non-css3 browsers */
+	float:left;
+}
+a.main_nav:hover {
+	width: 20%;
+	height:29px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	float:left;
+}
+a.current {
+	width: 20%;
+	height:29px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	float:left;
+	padding-bottom:5px;
+}
+a.current:visited {
+	width: 20%;
+	height:29px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	float:left;
+	padding-bottom:5px;
+}
+a.current img {
+	padding-bottom:5px;
+}
+
+
+/* 04. BUTTONS WITH ROUNDED CORNERS */
+/* bluebutton used in features, above Most Popular & Categories */
+a.blue_button {
+	width: 105px;
+	height:24px;
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	margin:auto;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f9ed4', endColorstr='#257ea9'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#2f9ed4), to(#257ea9)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #2f9ed4,  #257ea9); /* for firefox 3.6+ */ 
+	background: #257ea9; /* for non-css3 browsers */
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	vertical-align:central;
+	/*float:right;*/
+}
+/* graybutton used with individual apps */
+a.gray_button {
+	width: 105px;
+	height:24px;
+	color:#0379c3;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d6d6d6'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d6d6d6)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #fff,  #d6d6d6); /* for firefox 3.6+ */ 
+	background: #d6d6d6; /* for non-css3 browsers */
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	float:right;
+	margin-right:10%;
+}
+
+.breadcrumb {
+	color:#0583ca;
+	font-size:12px;
+	padding:10px 0px 0px 20px;
+	background-color:#e5e5e5;
+	height:40px;
+}
+.breadcrumb a{
+	color:#0583ca;
+	font-size:12px;
+	text-decoration:none;
+	margin:5px;
+}
+
+
+
+/* 05. FOOTER */
+#footer {
+	color:#fff;
+	background-color:#007bc7;
+	width:100%;
+	height:130px;
+}
+#footer a{
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	line-height:18px;
+}
+#left_column {
+	width:50px;
+	margin:30px 0px 0px 30px;
+	float:left;
+}
+#logo {
+	margin:auto;
+	vertical-align:middle;
+	text-align:center;
+	float:none;
+	padding-top:40px;
+}
+#tagline {
+	font-size:9px;
+	float:right;
+	margin:-25px 30px 0px 0px;
+}
+#copyright {
+	font-size:6px;
+	float:right;
+	margin-right:30px;
+}
+
+</style>
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: styles/app_details.css" />
+<style type="text/css">
+
+/* CSS Document */
+h3 {
+	font-size:19.5px;
+	line-height:25px;
+}
+h4 {
+	font-size:8px;
+	line-height:0px;
+}
+/* GREEN GET APP BUTTON */
+a.green_button {
+	width: 105px;
+	height:24px;
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	float:left;
+}
+
+/* CONTAINER FOR APP SPECS */
+.app_detail {
+	height:300px;
+	width:100%;
+	background-color:#fff;
+	padding-left:20px;
+	border-bottom:1px solid #d0d0d0;
+	box-shadow:0.1em 0.1em 0.2em #111;
+}
+.app_detail img {
+	float:left;
+	margin-right:10px;
+}
+.app_detail p {
+	font-size:9.5px;
+	width:90%;
+}
+#screengrabs {
+	background-color:#e5e5e5;
+	vertical-align:central;
+	height:310px;
+	overflow-x:scroll;
+	overflow-style:marquee-line;
+	margin:auto;
+	padding-left:20px;
+	box-shadow:0.1em 0.1em 0.2em #111;
+}
+#screengrabs img{
+	margin:25px 10px 10px 0px;
+	box-shadow:0.1em 0.2em 0.3em #111;
+}
+#similar_apps {
+	font-size:11.5px;
+	width:50%;
+	margin:auto;
+	background-color:#ebebeb;
+	text-align:center;
+	float:left;
+}
+hr {
+	float:left;
+}
+
+
+</style>
+<script type="text/javascript">
+function MM_setTextOfLayer(objId,x,newText) { //v9.0
+  with (document) if (getElementById && ((obj=getElementById(objId))!=null))
+    with (obj) innerHTML = unescape(newText);
+}
+</script>
+</head>
+
+<body>
+</div>
+<!-- TOP BAR FOR PROFILE INFO -->
+<div id="top_bar">
+Hi Brad! <a class="profile" href="#">My Account</a><a class="profile" href="#">Log Out</a>
+</div>
+
+<!-- WHITE BAR WITH LOGO AND PAGE TITLE -->
+<div id="header">
+<img src="images/mobile/dell/dell_logo_blue.png" /> App Portal
+</div>
+
+<!-- MAIN NAV TABS -->
+<a class="main_nav" href="user_home.html">Home</a>
+<a class="main_nav" href="#">Solutions</a>
+<a class="current" href="#"><img src="images/triangle.png" /><br />Apps</a>
+<a class="main_nav" href="#">Portals</a>
+<a class="main_nav" href="#">Help</a>
+<br clear="all" />
+<div class="breadcrumb">
+<a href="user_home.html">App Store Home</a>><a href="user_home.html">Messaging</a>><a href="#">Chatter</a>
+</div>
+<!-- APP DETAILS -->
+<div class="app_detail">
+<img src="images/mobile/app_details/chatter_icon_large.png" />
+<h3>Chatter</h3>
+<h4>by Salesforce</h4>
+<img src="images/mobile/stars.png" alt="3.5 stars"/><br />
+<a href="#" class="green_button">Get App</a>
+<br clear="all" />
+<div id="description">
+<p>
+Transform your company into a true Social Enterprise with the newly redesigned Chatter app. Voted the Best Mobile Business App of 2011 by iTunes Rewind, Chatter is salesforce.com’s popular social network for internal collaboration. Chatter’s sleek new interface and advanced features will keep you connected to the people and records that matter most, whether you’re in the office or on the road.
+</p>
+<p>
+Chatter isn’t just for Salesforce customers. Anyone can sign up for a free Chatter account at Chatter.com. Just set up your account and download the mobile app.
+</p>
+
+<h7 onClick="MM_setTextOfLayer('description','','&lt;p&gt;• View updates about the people, groups, and records you follow&lt;br /&gt;• Communicate with colleagues via FaceTime&lt;br /&gt;• Create posts (with photos or files) and add comments&lt;br /&gt;• View documents and links shared by others&lt;br /&gt;• Find and follow people in your organization&gt;br /&gt;• Find and join groups in your organization&lt;br /&gt;• View your coworkers\' profiles, and email them directly&lt;/p&gt;')">Read More >></h7>
+</p>
+</div>
+</div>
+<!--SCREENGRABS-->
+<div id="screengrabs">
+<img src="images/mobile/app_details/chatter1.png" /><img src="images/mobile/app_details/chatter2.png" /><img src="images/mobile/app_details/chatter3.png" />
+</div>
+<!-- SIMILAR APPS, subhead -->
+<hr align="left" width="22%" color="#ebebeb"/>&nbsp;&nbsp;&nbsp;
+<div id="similar_apps">
+&#8897;&nbsp;<em>Similar Apps</em>&nbsp;&#8897;
+</div><hr align="right" width="22%" color="#ebebeb"/>
+<!-- OTHER APPS, TWO TABS LAYOUT -->
+<!-- Concur -->
+<div class="app_section">
+<img src="images/mobile/icons/concur.png" alt="Concur" class="icon"/>
+<span class="app_name">Concur</span><br />
+<span class="app_developer">by Concur</span><br />
+<img src="images/mobile/stars.png" alt="3.5 stars"/>
+<!--<a href="#" class="gray_button">More Info</a>-->
+</div>
+<!-- Office 365 -->
+<div class="app_section">
+<img src="images/mobile/icons/office365.png" alt="Office 365" class="icon"/>
+<span class="app_name">Office 365</span><br />
+<span class="app_developer">by Microsoft</span><br />
+<img src="images/mobile/stars.png" alt="3.5 stars"/>
+<!--<a href="#" class="gray_button">More Info</a>-->
+</div>
+<!-- Sharepoint Portal -->
+<div class="app_section">
+<img src="images/mobile/icons/sharepoint.png" alt="Sharepoint Portal" class="icon"/>
+<span class="app_name">Sharepoint Portal</span><br />
+<span class="app_developer">by Wyse</span><br />
+<img src="images/mobile/stars.png" alt="3.5 stars"/>
+<!--<a href="#" class="gray_button">More Info</a>-->
+</div>
+<!--end most popular-->
+<!-- FOOTER -->
+<div id="footer">
+<!-- column of links -->
+<div id="left_column">
+<a href="#">Main</a>
+<a href="#">About</a>
+<a href="#">Help</a>
+<a href="#">Contact</a>
+</div>
+<!-- logo & tagline -->
+<div id="logo">
+<img src="images/mobile/dell/dell_logo_white.png" />
+</div>
+<div id="tagline">
+Dell Corporate App Portal
+
+</div>
+<!-- copyright in bottom right corner-->
+<div id="copyright">
+&copy;2012 Dell Corporate
+</div>
+</div><!--end footer -->
+</body>
+</html>

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+#popup {
+
+    /* overlay is hidden before loading */
+    display:none;
+	z-index:5000;
+	margin:auto;
+
+    /* standard decorations */
+    width:265px;
+	height:290px;
+	background-color:#eee;
+  }
+
+  #container {
+    font-size: 9px;
+	margin:auto;
+	border:#c2c2c2 1px solid;
+	max-width:55%;
+	background-color:#fff;
+	padding:5% 5% 5% 15%;
+    font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+  }
+
+  #popup h2 {
+    font-size:12px;
+  	margin-left:10%;
+  }
+#popup a {
+	font-size: 9px;
+	color:blue;
+	text-decoration:none;
+}
+.red {
+	  color:#f00;
+  }
+.close {
+	text-decoration:none;
+	border:none;
+	padding:0;
+	margin-right:15%;
+	float:right;
+}
+/* small button used in popup */
+#small_green_button {
+	width: 40px;
+	height: 12px;
+	color:#fff;
+	padding-top:3px;
+	font-size:9px;
+	text-align:center;
+	text-decoration:none;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	border-radius:10px;
+	float:right;
+}

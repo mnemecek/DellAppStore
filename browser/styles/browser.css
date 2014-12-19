@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* TABLE OF CONTENTS */
+
+/* 01. UNIVERSAL */
+/* 02. BASIC STRUCTURE, divs */
+/* 03. NAV STYLES, tabs */
+/* 04. BUTTONS WITH ROUNDED CORNERS */
+/* 05. FOOTER */
+
+/* ------------------------------- */
+
+/* 01. UNIVERSAL */
+#main_wrapper { 
+	width: 100%; 
+	margin:auto;
+}
+body {
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6d6d6', endColorstr='#ffffff'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#d6d6d6), to(#ffffff)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #d6d6d6,  #ffffff); /* for firefox 3.6+ */ 
+}
+#sign_in {
+	float:right;
+}
+#sign_in img {
+	margin:0;
+	padding:0;
+}
+
+
+
+/* 02. BASIC STRUCTURE, divs */
+#top_bar {
+	font-size:11px;
+	height:24px;
+	text-align:left;
+	width:580px;
+	margin:auto;
+}
+.profile {
+	background-color:#cce5f5;
+	height:24px;
+	width:25%;
+	margin-top:-3px;
+	float:right;
+	padding-top:3px;
+    white-space: nowrap;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+a.profile {
+	width:25%;
+	font-size:11px;
+	background-color:#cce5f5;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#header {
+	width:100%;
+	height:80px;
+	color:#aaa;
+	text-align:center;
+	font-size:30px;
+	font-weight:bold;
+	font-family:Arial;
+	background-color:#fff;
+	margin:auto;
+}
+#header img {
+	padding-top:10px;
+	margin:auto;
+	text-align:center;
+}
+#content_wrapper {
+	width:980px;
+	height:770px;
+	margin:auto;
+}
+.sidebar {
+	width:190px;
+	height:350px;
+	border-radius:4px 4px 0 0 ;
+	color:#000;
+	font-size:15px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:left;
+	text-decoration:none;
+	background-color:#ebebeb;
+	float:left;
+	margin:auto;
+}
+.sidebar h2 {
+	width:190px;
+	height:35px;
+	border-radius:4px 4px 0 0 ;
+	color:#fff;
+	font-size:19px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:10px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	float:left;
+}
+.right_arrow {
+	float:right;
+	width:33px;
+	height:100%;
+	text-align:center;
+	background-color:#dfdfdf;
+	color:#000;
+}
+.right_arrow_current {
+	float:right;
+	width:33px;
+	height:100%;
+	text-align:center;
+	background-color:#8b8b8b;
+	color:#fff;
+}
+.category {
+	font-weight:100;
+	font-size:15px;
+	line-height:20px;
+	background-color:#ebebeb;
+	border:1px solid #d0d0d0;
+	display:block;
+	word-wrap:break-word;
+}
+.category_current {
+	font-weight:100;
+	font-size:15px;
+	line-height:20px;
+	background-color:#8b8b8b;
+	border:1px solid #d0d0d0;
+	display:block;
+	word-wrap:break-word;
+	padding-left:20px;
+	color:#fff;
+}
+.category h8{
+	padding: 10px 0px 10px 20px;
+}
+#popular a {
+	font-size:12px;
+	line-height:29px;
+	text-decoration:none;
+	color:#000;
+	padding-left:20px;
+}
+#center_wrapper {
+	width:580px;
+	height:680px;
+	background-color:#fff;
+	margin:auto;
+	float:left;
+	padding:5px;
+}
+.app_section {
+	padding-left:30px;
+	width:250px;
+	height:110px;
+	float:left;
+	margin:auto;
+}
+.app_name {
+	font-size:20px;
+	padding-top:20px;
+}
+.app_developer {
+	font-size:7.5px;
+	line-height:18px;
+}
+#center_wrapper a {
+	text-decoration:none;
+	color:#000;
+}
+#center_wrapper a:visited { 
+	text-decoration:none;
+	color:#000;
+}
+.app_section img {
+	float:left;
+	padding-right:10px;
+}
+/* 03. NAV STYLES */
+/* mainnav = home, solutions, etc. tabs */
+#nav_wrapper {
+	margin:auto;
+	width:495px;
+	text-align:center;
+}
+#nav_wrapper a{
+	width: 95px;
+}
+a.main_nav {
+	width: 95px;
+	height:30px;
+	color:#fff;
+	margin:0 2px 0 2px;
+	border-radius: 0 0 4px 4px;
+	font-size:15px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	float:left;
+}
+a.main_nav:visited {
+	width: 95px;
+	height:30px;
+	color:#fff;
+	margin:0 2px 0 2px;
+	border-radius: 0 0 4px 4px;
+	font-size:15px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	float:left;
+}
+a.main_nav:hover {
+	width: 95px;
+	height:30px;
+	color:#fff;
+	margin:0 2px 0 2px;
+	border-radius: 0 0 4px 4px;
+	font-size:15px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	float:left;
+}
+a.current {
+	width: 95px;
+	height:40px;
+	color:#fff;
+	margin:0 2px 0px 2px;
+	border-radius: 0 0 4px 4px;
+	font-size:15px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	float:left;
+	padding-bottom:5px;
+}
+a.current:visited {
+	width: 95px;
+	height:40px;
+	color:#fff;
+	margin:0 2px 0 2px;
+	border-radius: 0 0 4px 4px;
+	font-size:15px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	float:left;
+	padding-bottom:5px;
+	}
+a.current img {
+	padding-bottom:5px;
+}
+
+
+/* 04. BUTTONS WITH ROUNDED CORNERS */
+/* bluebutton used in features, above Most Popular & Categories */
+a.blue_button {
+	width: 105px;
+	height:24px;
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	margin:auto;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f9ed4', endColorstr='#257ea9'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#2f9ed4), to(#257ea9)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #2f9ed4,  #257ea9); /* for firefox 3.6+ */ 
+	background: #257ea9; /* for non-css3 browsers */
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	vertical-align:central;
+	/*float:right;*/
+}
+a.blue_button:visited {
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	/*float:right;*/
+}
+/* graybutton used with individual apps */
+a.gray_button {
+	width: 105px;
+	height:24px;
+	color:#0379c3;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d6d6d6'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d6d6d6)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #fff,  #d6d6d6); /* for firefox 3.6+ */ 
+	background: #d6d6d6; /* for non-css3 browsers */
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	float:right;
+	margin-right:10%;
+}
+
+.breadcrumb {
+	color:#0583ca;
+	font-size:12px;
+	padding-top:10px;
+	height:25px;
+	margin-left:190px;
+}
+.breadcrumb a{
+	color:#0583ca;
+	font-size:12px;
+	text-decoration:none;
+}
+
+
+
+/* 05. FOOTER */
+#footer {
+	color:#fff;
+	background-color:#007bc7;
+	width:100%;
+	height:130px;
+}
+#footer_wrapper {
+	width:580px;
+	margin:auto;
+	padding:5px;
+}
+#footer a {
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	line-height:18px;
+	margin-top:40px;
+}
+
+#logo {
+	margin:auto;
+	text-align:center;
+}
+#tagline {
+	font-size:9px;
+	float:right;
+	margin:-25px 30px 0px 0px;
+}
+#copyright {
+	font-size:6px;
+	float:right;
+	margin-right:30px;
+}

@@ -1,0 +1,63 @@
+/*=================================*/
+/* Nivo Slider Demo
+/* November 2010
+/* By: Gilbert Pellegrom
+/* http://dev7studios.com
+/*=================================*/
+#slider{
+	width:768px;
+}
+
+.theme-default .nivoSlider {
+	background:#fff url(loading.gif) no-repeat 50% 50%;
+    margin-bottom:5px;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+.theme-default .nivoSlider img {
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivo-controlNav {
+	text-align: center;
+	padding: 15px 0;
+}
+.theme-default .nivo-controlNav a {
+	display:inline-block;
+	width:25px;
+	height:15px;
+	background:url(bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	
+}
+.theme-default .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.theme-default .nivo-directionNav a {
+	display:block;
+	background:url(arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.theme-default:hover .nivo-directionNav a { opacity: 10; }
+.theme-default a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.theme-default a.nivo-prevNav {
+	left:15px;
+}
+.theme-default .nivo-caption {
+    font-family:"Trebuchet MS", "Trebuchet", Arial, Helvetica, sans-serif;
+	padding-bottom:15px;
+	line-height:15px;
+}

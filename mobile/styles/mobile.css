@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* TABLE OF CONTENTS */
+
+/* 01. UNIVERSAL */
+/* 02. BASIC STRUCTURE, divs */
+/* 03. NAV STYLES, tabs */
+/* 04. BUTTONS WITH ROUNDED CORNERS */
+/* 05. FOOTER */
+
+/* ------------------------------- */
+
+/* 01. UNIVERSAL */
+a {
+	text-decoration:none;
+}
+wrapper { 
+	width: 100%; 
+}
+body {
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+#sign_in {
+	float:right;
+}
+#sign_in img {
+	margin:0;
+	padding:0;
+}
+
+/* CONTAINER FOR EACH APP */
+
+.app_section {
+	height:72px;
+	width:100%;
+	background-color:#ebebeb;
+	border:1px solid #d0d0d0;
+	display:block;
+	text-decoration:none;
+}
+.app_section a{
+	text-decoration:none;
+	color:#000;
+}
+.app_section a:visited{
+	text-decoration:none;
+	color:#000;
+}
+.app_section img {
+	float:left;
+}
+.icon{
+	margin:7px 10px 0 20px;
+}
+.right_arrow {
+	float:right;
+	width:42px;
+	height:72px;
+	text-align:center;
+	background-color:#dfdfdf;
+	color:#000;
+}
+#categories {
+	padding-top:20px;
+	font-weight:100;
+	line-height:30px;
+}
+/* SPAN CLASSES */
+.app_name {
+	font-size:20px;
+	padding-top:20px;
+}
+.app_developer {
+	font-size:7.5px;
+	line-height:18px;
+	}
+.app_section h8 {
+	margin-left:20px;
+}
+/* ------------------------------- */
+
+
+
+
+/* 02. BASIC STRUCTURE, divs */
+#top_bar {
+	font-size:11px;
+	background-color:#ebebeb;
+	height:18px;
+	width:100%;
+	text-align:left;
+	padding:5px 0px 2px 4px; 
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.profile {
+	background-color:#cce5f5;
+	height:20px;
+	width:25%;
+	margin-top:-3px;
+	float:right;
+	padding-top:3px;
+    white-space: nowrap;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+a.profile {
+	width:25%;
+	font-size:11px;
+	background-color:#cce5f5;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#header {
+	width:100%;
+	height:45px;
+	color:#aaa;
+	text-align:center;
+	font-size:21px;
+	font-weight:bold;
+	font-family:Arial;
+	background-color:#fff;
+}
+#header img {
+	vertical-align:central;
+	margin:auto;
+}
+/* CAROUSEL WITH LARGE IMAGE */
+#carousel {
+	width:100%;
+	height:142px;
+}
+#carousel img{
+	width:100%;
+}
+#carousel_overlay {
+	opacity:0.7;
+	height:65px;
+	background-color:#000;
+	color:#fff;
+	padding:6px 6px 0px 9px;
+}
+#carousel_overlay p {
+	width:50%;
+	font-size:9px;
+	float:left;
+}
+
+/* 03. NAV STYLES */
+/* mainnav = home, solutions, etc. tabs */
+a.main_nav {
+	width: 20%;
+	height:22px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	background: #02629e; /* for non-css3 browsers */
+	float:left;
+}
+a.main_nav:visited {
+	width: 20%;
+	height:22px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	background: #02629e; /* for non-css3 browsers */
+	float:left;
+}
+a.main_nav:hover {
+	width: 20%;
+	height:29px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	float:left;
+}
+a.current {
+	width: 20%;
+	height:29px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	float:left;
+	padding-bottom:5px;
+}
+a.current:visited {
+	width: 20%;
+	height:29px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	float:left;
+	padding-bottom:5px;
+}
+a.current img {
+	padding-bottom:5px;
+}
+
+
+/* 04. BUTTONS WITH ROUNDED CORNERS */
+/* bluebutton used in features, above Most Popular & Categories */
+a.blue_button {
+	width: 105px;
+	height:24px;
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	margin:auto;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f9ed4', endColorstr='#257ea9'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#2f9ed4), to(#257ea9)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #2f9ed4,  #257ea9); /* for firefox 3.6+ */ 
+	background: #257ea9; /* for non-css3 browsers */
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	vertical-align:central;
+	/*float:right;*/
+}
+/* graybutton used with individual apps */
+a.gray_button {
+	width: 105px;
+	height:24px;
+	color:#0379c3;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d6d6d6'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d6d6d6)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #fff,  #d6d6d6); /* for firefox 3.6+ */ 
+	background: #d6d6d6; /* for non-css3 browsers */
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	float:right;
+	margin-right:10%;
+}
+
+.breadcrumb {
+	color:#0583ca;
+	font-size:12px;
+	padding:10px 0px 0px 20px;
+	background-color:#e5e5e5;
+	height:40px;
+}
+.breadcrumb a{
+	color:#0583ca;
+	font-size:12px;
+	text-decoration:none;
+	margin:5px;
+}
+
+
+
+/* 05. FOOTER */
+#footer {
+	color:#fff;
+	background-color:#007bc7;
+	width:90%;
+	height:130px;
+	padding:5%;
+}
+#footer a{
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	line-height:18px;
+}
+#left_column {
+	width:50px;
+	float:left;
+}
+#logo {
+	margin:auto;
+	vertical-align:middle;
+	text-align:center;
+	float:none;
+}
+#tagline {
+	font-size:9px;
+	float:right;
+}
+#copyright {
+	font-size:6px;
+	float:right;
+}

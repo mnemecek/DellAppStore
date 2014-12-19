@@ -1,0 +1,926 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Dell&#8482; App Store Home</title>
+<!--MAIN STYLE ON EVERY PAGE -->
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: ../styles/mobile.css" />
+<style type="text/css">
+
+/* CSS Document */
+
+/* TABLE OF CONTENTS */
+
+/* 01. UNIVERSAL */
+/* 02. BASIC STRUCTURE, divs */
+/* 03. NAV STYLES, tabs */
+/* 04. BUTTONS WITH ROUNDED CORNERS */
+/* 05. FOOTER */
+
+/* ------------------------------- */
+
+/* 01. UNIVERSAL */
+wrapper { 
+	width: 100%; 
+}
+body {
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+#sign_in {
+	float:right;
+}
+#sign_in img {
+	margin:0;
+	padding:0;
+}
+
+/* CONTAINER FOR EACH APP */
+
+.app_section {
+	height:72px;
+	width:100%;
+	background-color:#ebebeb;
+	border:1px solid #d0d0d0;
+	display:block;
+	text-decoration:none;
+}
+.app_section a{
+	text-decoration:none;
+	color:#000;
+}
+.app_section a:visited{
+	text-decoration:none;
+	color:#000;
+}
+.app_section img {
+	float:left;
+}
+.icon{
+	margin:7px 10px 0 20px;
+}
+.right_arrow {
+	float:right;
+	width:42px;
+	height:72px;
+	text-align:center;
+	background-color:#dfdfdf;
+	color:#000;
+}
+#categories {
+	padding-top:20px;
+	font-weight:100;
+	line-height:30px;
+}
+/* SPAN CLASSES */
+.app_name {
+	font-size:20px;
+	padding-top:20px;
+}
+.app_developer {
+	font-size:7.5px;
+	line-height:18px;
+	}
+.app_section h8 {
+	margin-left:20px;
+}
+/* ------------------------------- */
+
+
+
+
+/* 02. BASIC STRUCTURE, divs */
+#top_bar {
+	font-size:11px;
+	background-color:#ebebeb;
+	height:18px;
+	width:100%;
+	text-align:left;
+	padding:5px 0px 2px 4px; 
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.profile {
+	background-color:#cce5f5;
+	height:20px;
+	width:25%;
+	margin-top:-3px;
+	float:right;
+	padding-top:3px;
+    white-space: nowrap;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+a.profile {
+	width:25%;
+	font-size:11px;
+	background-color:#cce5f5;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#header {
+	width:100%;
+	height:45px;
+	color:#aaa;
+	text-align:center;
+	font-size:21px;
+	font-weight:bold;
+	font-family:Arial;
+	background-color:#fff;
+}
+#header img {
+	vertical-align:central;
+	margin:auto;
+}
+/* CAROUSEL WITH LARGE IMAGE */
+#carousel {
+	width:100%;
+	height:142px;
+}
+#carousel img{
+	width:100%;
+}
+#carousel_overlay {
+	opacity:0.7;
+	height:65px;
+	background-color:#000;
+	color:#fff;
+	padding:6px 6px 0px 9px;
+}
+#carousel_overlay p {
+	width:50%;
+	font-size:9px;
+	float:left;
+}
+
+/* 03. NAV STYLES */
+/* mainnav = home, solutions, etc. tabs */
+a.main_nav {
+	width: 20%;
+	height:22px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	background: #02629e; /* for non-css3 browsers */
+	float:left;
+}
+a.main_nav:visited {
+	width: 20%;
+	height:22px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	background: #02629e; /* for non-css3 browsers */
+	float:left;
+}
+a.main_nav:hover {
+	width: 20%;
+	height:29px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	padding-top:5px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	float:left;
+}
+a.current {
+	width: 20%;
+	height:29px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	float:left;
+	padding-bottom:5px;
+}
+a.current:visited {
+	width: 20%;
+	height:29px;
+	color:#fff;
+	font-size:11px;
+	font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	float:left;
+	padding-bottom:5px;
+}
+a.current img {
+	padding-bottom:5px;
+}
+
+
+/* 04. BUTTONS WITH ROUNDED CORNERS */
+/* bluebutton used in features, above Most Popular & Categories */
+a.blue_button {
+	width: 105px;
+	height:24px;
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0.1em 0.1em 0.2em black;
+	margin:auto;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f9ed4', endColorstr='#257ea9'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#2f9ed4), to(#257ea9)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #2f9ed4,  #257ea9); /* for firefox 3.6+ */ 
+	background: #257ea9; /* for non-css3 browsers */
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	vertical-align:central;
+	/*float:right;*/
+}
+/* graybutton used with individual apps */
+a.gray_button {
+	width: 105px;
+	height:24px;
+	color:#0379c3;
+	font-size:15px;
+	text-align:center;
+	text-decoration:none;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d6d6d6'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d6d6d6)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #fff,  #d6d6d6); /* for firefox 3.6+ */ 
+	background: #d6d6d6; /* for non-css3 browsers */
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	float:right;
+	margin-right:10%;
+}
+
+.breadcrumb {
+	color:#0583ca;
+	font-size:12px;
+	padding:10px 0px 0px 20px;
+	background-color:#e5e5e5;
+	height:40px;
+}
+.breadcrumb a{
+	color:#0583ca;
+	font-size:12px;
+	text-decoration:none;
+	margin:5px;
+}
+
+
+
+/* 05. FOOTER */
+#footer {
+	color:#fff;
+	background-color:#007bc7;
+	width:100%;
+	height:130px;
+}
+#footer a{
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	line-height:18px;
+}
+#left_column {
+	width:50px;
+	margin:30px 0px 0px 30px;
+	float:left;
+}
+#logo {
+	margin:auto;
+	vertical-align:middle;
+	text-align:center;
+	float:none;
+	padding-top:40px;
+}
+#tagline {
+	font-size:9px;
+	float:right;
+	margin:-25px 30px 0px 0px;
+}
+#copyright {
+	font-size:6px;
+	float:right;
+	margin-right:30px;
+}
+
+</style>
+<!-- Code for popup -->
+<script src="../scripts/jquery.tools.min.js"></script>
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: ../styles/popup.css" type="text/css"/>
+<style type="text/css">
+
+/* CSS Document */
+#popup {
+
+    /* overlay is hidden before loading */
+    display:none;
+	z-index:5000;
+	margin:auto;
+
+    /* standard decorations */
+    width:265px;
+	height:290px;
+	background-color:#eee;
+  }
+
+  #container {
+    font-size: 9px;
+	margin:auto;
+	border:#c2c2c2 1px solid;
+	max-width:55%;
+	background-color:#fff;
+	padding:5% 5% 5% 15%;
+    font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+  }
+
+  #popup h2 {
+    font-size:12px;
+  	margin-left:10%;
+  }
+#popup a {
+	font-size: 9px;
+	color:blue;
+	text-decoration:none;
+}
+.red {
+	  color:#f00;
+  }
+.close {
+	text-decoration:none;
+	border:none;
+	padding:0;
+	margin-right:15%;
+	float:right;
+}
+/* small button used in popup */
+#small_green_button {
+	width: 40px;
+	height: 12px;
+	color:#fff;
+	padding-top:3px;
+	font-size:9px;
+	text-align:center;
+	text-decoration:none;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	border-radius:10px;
+	float:right;
+}
+
+</style>
+<!-- styles for carousel-->
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: ../styles/carousel.css" type="text/css"/>
+<style type="text/css">
+
+/*=================================*/
+/* Nivo Slider Demo
+/* November 2010
+/* By: Gilbert Pellegrom
+/* http://dev7studios.com
+/*=================================*/
+
+
+.theme-default .nivoSlider {
+	background:#fff url(../styles/loading.gif) no-repeat 50% 50%;
+    margin-bottom:5px;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+.theme-default .nivoSlider img {
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivo-controlNav {
+	text-align: center;
+	padding: 2px 0;
+}
+.theme-default .nivo-controlNav a {
+	display:inline-block;
+	width:25px;
+	height:15px;
+	background:url(../styles/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	
+}
+.theme-default .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.theme-default .nivo-directionNav a {
+	display:block;
+	background:url(../styles/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.theme-default:hover .nivo-directionNav a { opacity: 10; }
+.theme-default a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.theme-default a.nivo-prevNav {
+	left:15px;
+}
+.theme-default .nivo-caption {
+    font-family:"Trebuchet MS", "Trebuchet", Arial, Helvetica, sans-serif;
+	padding-bottom:15px;
+	line-height:15px;
+}
+
+</style>
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: ../styles/nivo-slider.css" type="text/css" />
+<style type="text/css">
+
+/*
+ * jQuery Nivo Slider v3.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	font-size:10px;
+	font-family:"Trebuchet MS", "Trebuchet", Arial, Helvetica, sans-serif
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivoSlider h1 {
+	font-size:18px;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 1;
+	filter:alpha(opacity=10);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:40%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+</style>
+<!-- styles for tabs -->
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: ../styles/jquery-ui.css" type="text/css"/>
+<style type="text/css">
+
+/*! jQuery UI - v1.8.23 - 2012-08-15
+* https://github.com/jquery/jquery-ui
+* Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.tabs.css, jquery.ui.theme.css
+* Copyright (c) 2012 AUTHORS.txt; Licensed MIT, GPL */
+
+body {
+	margin:0;
+}
+#tabs {
+	width:100%;
+}
+#tabs li{
+	width:49%;
+}
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/*
+ * jQuery UI Menu 1.8.23
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Menu#theming
+ */
+
+
+.ui-tabs { position: relative; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em 0 .2em .2em; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } 
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-family:"Trebuchet", "Trebuchet MS", Arial, Verdana, sans-serif/*{ffDefault}*/; font-size: 1.1em/*{fsDefault}*/; }
+.ui-widget .ui-widget { font-size: 1em; border: 1px solid #aaaaaa;}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family:"Trebuchet", "Trebuchet MS", Arial, Verdana, sans-serif/*{ffDefault}*/; font-size: 1em; }
+.ui-widget-content a { color: #000/*{fcContent}*/; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: 1px solid #d3d3d3/*{borderColorDefault}*/;
+	color:#0379c3;/*{fcDefault}*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d6d6d6'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d6d6d6)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #fff,  #d6d6d6); /* for firefox 3.6+ */ 
+	background: #d6d6d6; /* for non-css3 browsers */ font-weight: normal/*{fwDefault}*/; color: #212121/*{fcActive}*/;
+	font-weight: normal/*{fwDefault}*/;
+	}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color:#0379c3;/*{fcDefault}*/
+	text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	border: 1px solid #999999/*{borderColorHover}*/;
+	background: #dadada/*{bgColorHover}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #0379c3/*{fcHover}*/; }
+.ui-state-hover a, .ui-state-hover a:hover {
+	color:#0379c3;/*{fcHover}*/;
+	text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	color:#fff;
+	border: 1px solid #aaaaaa/*{borderColorActive}*/;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0370b5', endColorstr='#02629e'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0370b5), to(#02629e)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0370b5,  #02629e); /* for firefox 3.6+ */ 
+	background: #02629e; /* for non-css3 browsers */
+	}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #fff/*{fcActive}*/;
+	text-decoration: none; }
+.ui-widget :active { outline: none; }
+
+
+/* Corner radius */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; -khtml-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; -khtml-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 4px/*{cornerRadius}*/; -webkit-border-bottom-left-radius: 4px/*{cornerRadius}*/; -khtml-border-bottom-left-radius: 4px/*{cornerRadius}*/; border-bottom-left-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 4px/*{cornerRadius}*/; -webkit-border-bottom-right-radius: 4px/*{cornerRadius}*/; -khtml-border-bottom-right-radius: 4px/*{cornerRadius}*/; border-bottom-right-radius: 4px/*{cornerRadius}*/; }
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<!-- START POPUP BOX -->
+<div id="popup"><div class="close"><img src="../images/close.png"></div>
+  <h2>Sign In:</h2><div id="container">
+    
+    <p>To continue, please sign in:</p>
+   E-mail address<span class="red">*</span><br />
+    <input name="enter_email" type="text" size="16" width="160"/><br />
+    <br />
+    Password<span class="red">*</span><br />
+    <input name="enter_email" type="text" size="16" width="160"/><br />
+    <br />
+    <a href="user_home.html"><div id="small_green_button">Sign In</div></a>
+    <br />
+    <p>
+    <a href="#">&#9654; Forgot Password</a><br>
+    <a href="#">&#9654; Create An Account</a>  
+    </p> 
+  </div>
+</div>
+<script type="">
+$(document).ready(function() {
+  $("#sign_in").click(function() {
+      $("#popup").overlay().load();
+  });
+
+    // select the overlay element - and "make it an overlay"
+  $("#popup").overlay({
+
+    // custom top position
+    top: 260,
+
+    // some mask tweaks suitable for popup-looking dialogs
+    mask: {
+
+    // you might also consider a "transparent" color for the mask
+    color: '#000',
+
+    // load mask a little faster
+    loadSpeed: 200,
+
+    // very transparent
+    opacity: 0.7
+    },
+
+    // disable this for modal dialog-type of overlays
+    closeOnClick: false,
+
+    // load it immediately after the construction
+    load: false
+
+    });
+    });
+</script>
+<!-- TOP BAR FOR PROFILE INFO -->
+<div id="top_bar">
+<div id="sign_in"><img src="../images/sign_in.png" height="21"/></div>
+</div>
+<!-- END TOP BAR, SIGN IN, POPUP -->
+<!-- WHITE BAR WITH LOGO AND PAGE TITLE -->
+<div id="header">
+<img src="../images/mobile/dell/dell_logo_blue.png" /> App Portal
+</div>
+
+<!-- MAIN NAV TABS -->
+<a class="current" href="#"><img src="../images/triangle.png" /><br />Home</a>
+<a class="main_nav" href="#">Solutions</a>
+<a class="main_nav" href="../app_details.html">Apps</a>
+<a class="main_nav" href="#">Portals</a>
+<a class="main_nav" href="#">Help</a>
+<!--<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>-->
+<script type="text/javascript" src="../scripts/jquery.nivo.slider.js"></script>
+
+ 
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="../images/browser/carousel/carousel1.png" data-thumb="images/mobile/carousel/carousel1.png" alt="" title="<h1>Good for Enterprise</h1>Manage mobile devices confidently with app-level encryption and enriched mobility software. Mobile device management." data-transition="slideInLeft" />
+                <img src="../images/browser/carousel/carousel2.png" data-thumb="images/mobile/carousel/carousel2.png" alt="" title="<h1>Chatter</h1>Voted the Best Mobile Business App of 2011 by iTunes Rewind, Chatter is salesforce.com’s popular social network for internal collaboration." data-transition="slideInLeft" />
+                <img src="../images/browser/carousel/carousel3.png" data-thumb="images/mobile/carousel/carousel3.png" alt="" title="<h1>Good for Enterprise</h1>Good for Enterprise is a mobile email and collaboration suite that increases employee productivity and satisfaction without compromising security." data-transition="slideInLeft" />
+            </div>
+        </div>
+
+    
+   
+    <!--END CAROUSEL-->
+
+<!--TABS TO SELECT APP DETAILS-->
+<div id="tabs">
+    <ul>
+        <li><a href="#most_popular">Most Popular</a></li>
+        <li><a href="#categories">Categories</a></li><br clear="all">
+    </ul>
+  <script src="../scripts/jquery-ui.min.js"></script>
+<!-- APP DETAILS, TWO TABS LAYOUT -->
+<div id="most_popular">
+<!-- PocketCloud -->
+<a href="../app_details.html">
+<div class="app_section">
+<img src="../images/mobile/icons/pocketcloud.png" alt="Pocket Cloud" class="icon"/>
+<span class="app_name">PocketCloud</span><br />
+<span class="app_developer">by Wyse</span><br />
+<img src="../images/mobile/stars.png" alt="3.5 stars"/>
+<!--<a href="#" class="gray_button">More Info</a>-->
+</div>
+</a>
+<!-- Chatter -->
+<a href="../app_details.html">
+<div class="app_section">
+<img src="../images/mobile/icons/chatter.png" alt="Chatter" class="icon"/>
+<span class="app_name">Chatter</span><br />
+<span class="app_developer">by Salesforce</span><br />
+<img src="../images/mobile/stars.png" alt="3.5 stars"/>
+<!--<a href="#" class="gray_button">More Info</a>-->
+</div>
+</a>
+<!-- Concur -->
+<a href="../app_details.html">
+<div class="app_section">
+<img src="../images/mobile/icons/concur.png" alt="Concur" class="icon"/>
+<span class="app_name">Concur</span><br />
+<span class="app_developer">by Concur</span><br />
+<img src="../images/mobile/stars.png" alt="3.5 stars"/>
+<!--<a href="#" class="gray_button">More Info</a>-->
+</div>
+</a>
+<!-- Office 365 -->
+<a href="../app_details.html">
+<div class="app_section">
+<img src="../images/mobile/icons/office365.png" alt="Office 365" class="icon"/>
+<span class="app_name">Office 365</span><br />
+<span class="app_developer">by Microsoft</span><br />
+<img src="../images/mobile/stars.png" alt="3.5 stars"/>
+<!--<a href="#" class="gray_button">More Info</a>-->
+</div>
+</a>
+<!-- Good for Enterprise -->
+<a href="../app_details.html">
+<div class="app_section">
+<img src="../images/mobile/icons/good.png" alt="Good for Enterprise" class="icon"/>
+<span class="app_name">Good for Enterprise</span><br />
+<span class="app_developer">by Good Technologies</span><br />
+<img src="../images/mobile/stars.png" alt="3.5 stars"/>
+<!--<a href="#" class="gray_button">More Info</a>-->
+</div>
+</a>
+<!-- Sharepoint Portal -->
+<a href="../app_details.html">
+<div class="app_section">
+<img src="../images/mobile/icons/sharepoint.png" alt="Sharepoint Portal" class="icon"/>
+<span class="app_name">Sharepoint Portal</span><br />
+<span class="app_developer">by Wyse</span><br />
+<img src="../images/mobile/stars.png" alt="3.5 stars"/>
+<!--<a href="#" class="gray_button">More Info</a>-->
+</div>
+</a>
+</div>
+<!--end most popular-->
+
+<div id="categories">
+<div class="app_section">
+<h8>Messaging</h8>
+<a href="../sort_messaging.html">
+<div class="right_arrow">
+>
+</div>
+</a>
+</div>
+<div class="app_section">
+<h8>Documents &amp; Collaboration</h8>
+<a href="../sort_messaging.html">
+<div class="right_arrow">
+>
+</div>
+</a>
+</div>
+<div class="app_section">
+<h8>Remote Working &amp; Access</h8>
+<a href="../sort_messaging.html">
+<div class="right_arrow">
+>
+</div>
+</a>
+</div>
+<div class="app_section">
+<h8>Dell Apps</h8>
+<a href="../sort_messaging.html">
+<div class="right_arrow">
+>
+</div>
+</a>
+</div>
+<div class="app_section">
+<h8>Corporate</h8>
+<a href="../sort_messaging.html">
+<div class="right_arrow">
+>
+</div><!--end app section-->
+</a>
+</div><!--end categories-->
+</div><!--END ALL APPS-->
+
+
+
+
+
+<!-- FOOTER -->
+<div id="footer">
+<!-- column of links -->
+<div id="left_column">
+<a href="#">Main</a>
+<a href="#">About</a>
+<a href="#">Help</a>
+<a href="#">Contact</a>
+</div>
+<!-- logo & tagline -->
+<div id="logo">
+<img src="../images/mobile/dell/dell_logo_white.png" />
+</div>
+<div id="tagline">
+Dell Corporate App Portal
+</div>
+<br clear="all" />
+<!-- copyright in bottom right corner-->
+<div id="copyright">
+&copy;2012 Dell Corporate
+</div>
+</div><!--end footer -->
+ <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+	
+	 $(document).ready(function() {
+    $("#tabs").tabs();
+  });
+    </script> 
+    </div>
+</body>
+</html>

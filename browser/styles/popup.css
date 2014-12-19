@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+#popup {
+
+    /* overlay is hidden before loading */
+    display:none;
+	z-index:5000;
+	margin:auto;
+
+    /* standard decorations */
+    width:320px;
+	height:350px;
+	background-color:#eee;
+  }
+#form {
+	margin:auto;
+	width:200px;
+}
+  #container {
+    font-size: 12px;
+	margin:auto;
+	border:#c2c2c2 1px solid;
+	width:280px;
+	height:260px;
+	background-color:#fff;
+	padding:10px;
+    font-family:"Trebuchet", "Trebuchet MS", Arial, Helvetica, sans-serif;
+  }
+
+  #popup h2 {
+    font-size:16px;
+  	padding-left:10px;
+  }
+#popup a {
+	font-size: 12px;
+	color:blue;
+	text-decoration:none;
+}
+.red {
+	  color:#f00;
+  }
+.close {
+	text-decoration:none;
+	border:none;
+	padding:0;
+	margin-right:15%;
+	float:right;
+}
+/* small button used in popup */
+#small_green_button {
+	width: 60px;
+	height: 18px;
+	color:#fff;
+	padding-top:3px;
+	font-size:12px;
+	text-align:center;
+	text-decoration:none;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3da427', endColorstr='#31831f'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3da427), to(#31831f)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3da427,  #31831f); /* for firefox 3.6+ */ 
+	background: #931831f; /* for non-css3 browsers */
+	border-radius:10px;
+	float:right;
+}
